@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import BookCreate from './components/BookCreate';
+import BookList from './components/BookList';
 import './App.css';
 
 function App() {
@@ -18,9 +19,9 @@ function App() {
   };
 
   return (
-    <div>
-      {books.length}
+    <div className='app'>
       <BookCreate onCreate={createBook} />
+      <BookList books={books} />
     </div>
   );
 }
