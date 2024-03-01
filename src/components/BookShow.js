@@ -18,7 +18,7 @@ function BookShow({ book, onDelete }) {
         editShow 
           ? 
           <div>
-            <BookEdit />
+            <BookEdit book={book} />
           </div> 
           : 
           <div>
