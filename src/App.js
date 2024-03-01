@@ -6,6 +6,14 @@ import './App.css';
 function App() {
   const [books, setBooks] = useState([]);
 
+  const deleteBookById = (id) => {
+    const updatedBooks = books.filter((book) => {
+      return book.id !== id;
+    });
+
+    setBooks(updatedBooks);
+  };
+
   const createBook = (title) => {
     console.log("Need to add book with title:", title);
     const updatedBooks = [
@@ -21,7 +29,7 @@ function App() {
   return (
     <div className='app'>
       <BookCreate onCreate={createBook} />
-      <BookList books={books} />
+      <BookList books={books} onDelete={deleteBookById} />
     </div>
   );
 }
