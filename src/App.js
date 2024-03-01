@@ -9,7 +9,10 @@ function App() {
     console.log("Need to add book with title:", title);
     const updatedBooks = [
       ...books,
-      { id: 123, title }
+      {
+        id: Math.floor(Math.random() * 9999 + 1),
+        title
+      }
     ];
     setBooks(updatedBooks);
   };
