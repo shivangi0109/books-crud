@@ -71,3 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Free online service for photos
 [https://picsum.photos](https://picsum.photos)
+
+### Install json-server, create db.json file, add script for server in package.json file and run the json server
+
+### add rest client extension to VS Code, create api.http file
